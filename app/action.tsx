@@ -43,7 +43,7 @@ async function submitUserMessage(
   );
 
   const completion = runOpenAICompletion(openai, {
-    model: 'gpt-3.5-turbo',
+    model: 'gpt-4o-mini',
     stream: true,
     messages: [
       ...aiState.get().map((info: any) => ({
